@@ -109,6 +109,12 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/router@^4.3.4":
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-4.3.4.tgz#206588fec466f83a2768bd756c5664651091e477"
+  dependencies:
+    tslib "^1.7.1"
+
 "@ngtools/json-schema@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@ngtools/json-schema/-/json-schema-1.1.0.tgz#c3a0c544d62392acc2813a42c8a0dc6f58f86922"
@@ -193,6 +199,10 @@ alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
+
+angular-route@^1.6.5:
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/angular-route/-/angular-route-1.6.5.tgz#af45593299f55874d0261018adb11520a3817d2a"
 
 ansi-escapes@^2.0.0:
   version "2.0.0"
