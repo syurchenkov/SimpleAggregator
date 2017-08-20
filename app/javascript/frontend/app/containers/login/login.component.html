@@ -1,1 +1,16 @@
-<h1>login</h1>
+<div>
+    <h2>Login</h2>
+    <form name="form" (ngSubmit)="login()" #heroForm="ngForm" novalidate>
+        <div>
+            <label for="email">Email</label>
+            <input type="text"  name="email" [(ngModel)]="user.email" required />
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" [(ngModel)]="user.password" required />
+        </div>
+        <div>
+            <button [disabled]="loading" >Login</button>
+        </div>
+    </form>
+</div>
