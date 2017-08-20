@@ -6,11 +6,11 @@ RSpec.describe User, type: :model do
   context 'validations' do 
     subject { build(:user) }
 
-    it { should validate_presence_of :email }
-    it { should validate_length_of(:email).is_at_most(255) }
-    it { should validate_uniqueness_of(:email).case_insensitive }
-    it { should have_secure_password }
-    it { should validate_length_of(:password).is_at_least(6)}
+    it { is_expected.to validate_presence_of :email }
+    it { is_expected.to validate_length_of(:email).is_at_most(255) }
+    it { is_expected.to validate_uniqueness_of(:email).case_insensitive }
+    it { is_expected.to have_secure_password }
+    it { is_expected.to validate_length_of(:password).is_at_least(6)}
   end
 
   it "is not valid with invalid email format" do
