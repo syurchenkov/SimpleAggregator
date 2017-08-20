@@ -1,5 +1,7 @@
 Rails.application.configure do
   config.x.webpacker[:dev_server_host] = "http://127.0.0.1:8080"
+
+  config.debug_exception_response_format = :api
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
