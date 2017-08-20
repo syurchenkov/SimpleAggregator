@@ -7,9 +7,14 @@ RSpec.describe Api::AuthenticationController, type: :controller do
 
     context 'valid credentials' do 
       let(:password) { 'password' }
+
       subject{ response.body }
 
-      it { have_json_path('auth_token') }
+      it { is_expected.to have_json_path('auth_token') }
+      it { is_expected.to have_json_path('user/admin') }
+      it { is_expected.to have_json_path('user/email') }
+      it { is_expected.not_to have_json_path('user/password_digest') }
+      it { is_expected.to be_json_eql(%({"user":{"email":"#{ user.email }","admin":#{ user.admin }}})).excluding('auth_token') }
     end
 
     context 'invalid credentials' do 
