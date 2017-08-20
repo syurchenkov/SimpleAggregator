@@ -41,6 +41,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'faker'
+  gem 'json_spec'
 end
 
 group :development do

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   namespace :api do
-    
+    post '/auth', to: 'authentication#authenticate'
   end
   root 'layouts#index'
   get '*path' => 'layouts#index'
