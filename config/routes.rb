@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     post '/auth', to: 'authentication#authenticate'
 
     resources :services
+    resources :car_services
   end
 
   root 'application#application'
