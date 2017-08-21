@@ -32,7 +32,7 @@ class Api::ServicesController < ApplicationController
 
   private 
     def service_params
-      params.permit(:title)
+      params.permit(:name)
     end
 
     def set_service

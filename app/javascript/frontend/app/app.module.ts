@@ -9,13 +9,16 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './containers/home/home.component';
 import { LoginComponent } from './containers/login/login.component';
 import { LoginService } from './services/login.service';
+import { ServicesComponent } from './containers/services/services.component';
+import { ServicesService } from './services/services.service';
 import { routes } from './app-routes';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,7 @@ import { routes } from './app-routes';
   providers: [
   { provide: APP_BASE_HREF, useValue: '/' },
   LoginService,
+  ServicesService
   ],
   bootstrap: [AppComponent]
 })

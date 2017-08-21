@@ -1,0 +1,25 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h3> Services </h3>
+      <ul class="list-group">
+        <li *ngFor="let service of services; let i = index" class="list-group-item">
+          <span>{{ i + 1 }}</span> {{ service.attributes.name }}
+          <button class="btn btn-default bt-xs pull-right" (click)="delete(service)" style="padding:2px 8px;">x</button>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h3> Add new service </h3>
+      <div class="form-group">
+        <label >Name</label>
+        <input type="text" class="form-control" #serviceName placeholder="Enter name"/>
+      </div>
+      <button type="submit" (click)="add(serviceName.value)" class="btn btn-default">Отправить</button>
+    </div>
+  </div>
+</div>
+
+
+

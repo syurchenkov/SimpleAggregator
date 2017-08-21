@@ -3,5 +3,4 @@
 // <hello-angular>Loading...</hello-angular>
 //
 // <%= javascript_pack_tag 'hello_angular' %>
-
 require('../frontend')
