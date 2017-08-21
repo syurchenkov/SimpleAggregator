@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   namespace :api do
     post '/auth', to: 'authentication#authenticate'
 
-    resources :services, only: [:index, :show, :create, :update, :destroy]
+    resources :services
   end
 
   root 'application#application'
