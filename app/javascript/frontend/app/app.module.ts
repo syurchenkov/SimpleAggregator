@@ -11,6 +11,8 @@ import { LoginComponent } from './containers/login/login.component';
 import { LoginService } from './services/login.service';
 import { ServicesComponent } from './containers/services/services.component';
 import { ServicesService } from './services/services.service';
+import { CarServicesComponent } from './containers/car-services/car-services.component';
+import { CarServicesService } from './services/car-services.service';
 import { routes } from './app-routes';
 
 @NgModule({
@@ -18,7 +20,8 @@ import { routes } from './app-routes';
     AppComponent,
     HomeComponent,
     LoginComponent,
-    ServicesComponent
+    ServicesComponent,
+    CarServicesComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import { routes } from './app-routes';
   providers: [
   { provide: APP_BASE_HREF, useValue: '/' },
   LoginService,
-  ServicesService
+  ServicesService,
+  CarServicesService
   ],
   bootstrap: [AppComponent]
 })
